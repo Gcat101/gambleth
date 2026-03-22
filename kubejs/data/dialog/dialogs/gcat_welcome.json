@@ -1,0 +1,167 @@
+{
+  "id": "gcat_welcome",
+  "start": "0",
+  "entries": [
+    {
+      "id": "0",
+      "text": "Hey!",
+      "audio": "entity.gcat_welcome_0",
+      "next": "1"
+    },
+    {
+      "id": "1",
+      "text": "Is everything okay?",
+      "audio": "entity.gcat_welcome_1",
+      "next": "2",
+
+			"command": [
+				"kubejs painter @p {close_eyes: {remove: true}}"
+			]
+    },
+    {
+      "id": "2",
+      "speaker": "Casino Master",
+      "portraits": [
+        {
+          "path": "gcat.png",
+          "position": "INLINE"
+        } 
+      ],
+      "text": "...",
+      "next": "3"
+    },
+    {
+      "id": "3",
+      "speaker": "Casino Master",
+      "portraits": [
+        {
+          "path": "gcat.png",
+          "position": "INLINE"
+        } 
+      ],
+      "text": "Looks like you were zoning out for a second there.",
+      "audio": "entity.gcat_welcome_3",
+      "next": "4"
+    },
+    {
+      "id": "4",
+      "speaker": "Casino Master",
+      "portraits": [
+        {
+          "path": "gcat.png",
+          "position": "INLINE"
+        } 
+      ],
+      "text": "Luck doesn't seem to be on your side today, does it?",
+      "audio": "entity.gcat_welcome_4",
+      "next": "5",
+
+			"command": [
+				"gambleth show_fake_chip_toast @p"
+			]
+    },
+    {
+      "id": "5",
+      "speaker": "Casino Master",
+      "portraits": [
+        {
+          "path": "gcat.png",
+          "position": "INLINE"
+        } 
+      ],
+      "text": "You've lost all of your chips again...",
+      "audio": "entity.gcat_welcome_5",
+      "next": "6"
+    },
+    {
+      "id": "6",
+      "speaker": "Casino Master",
+      "portraits": [
+        {
+          "path": "gcat.png",
+          "position": "INLINE"
+        } 
+      ],
+      "text": "Well, you finally get a second chance today.",
+      "audio": "entity.gcat_welcome_6",
+      "next": "7"
+    },
+    {
+      "id": "7",
+      "speaker": "Casino Master",
+      "portraits": [
+        {
+          "path": "gcat.png",
+          "position": "INLINE"
+        } 
+      ],
+      "text": "Our basement has recently been overrun with pests, and our janitor is not doing a very good job at getting rid of them.",
+      "audio": "entity.gcat_welcome_7",
+      "next": "8"
+    },
+    {
+      "id": "8",
+      "speaker": "Casino Master",
+      "portraits": [
+        {
+          "path": "gcat.png",
+          "position": "INLINE"
+        } 
+      ],
+      "text": "(...to be frank, the amount he's getting paid might have to do something with it)",
+      "audio": "entity.gcat_welcome_8",
+      "next": "9"
+    },
+    {
+      "id": "9",
+      "speaker": "Casino Master",
+      "portraits": [
+        {
+          "path": "gcat.png",
+          "position": "INLINE"
+        } 
+      ],
+      "text": "I'll let you help him in exchange for some extra chips. Beware though, it's kinda dangerous out there.",
+      "audio": "entity.gcat_welcome_9",
+      "next": "10"
+    },
+    {
+      "id": "10",
+      "speaker": "Casino Master",
+      "portraits": [
+        {
+          "path": "gcat.png",
+          "position": "INLINE"
+        } 
+      ],
+      "text": "He's waiting for you in the basement, go talk to him, he'll guide you to the place.",
+      "audio": "entity.gcat_welcome_10",
+      "next": "11"
+    },
+    {
+      "id": "11",
+      "speaker": "Casino Master",
+      "portraits": [
+        {
+          "path": "gcat.png",
+          "position": "INLINE"
+        } 
+      ],
+      "text": "Oh, and make sure not to call him a janitor when he's around. He likes to refer to himself as a wizard, apparently.",
+      "audio": "entity.gcat_welcome_11",
+      "next": "12"
+    },
+    {
+      "id": "12",
+      "speaker": "Casino Master",
+      "portraits": [
+        {
+          "path": "gcat.png",
+          "position": "INLINE"
+        } 
+      ],
+      "text": "(god, this guy)",
+      "audio": "entity.gcat_welcome_12"
+    }
+  ]
+}

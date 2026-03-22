@@ -1,0 +1,57 @@
+{
+  "id": "frog_1",
+  "start": "0",
+  "entries": [
+    {
+      "id": "0",
+      "speaker": "Janitor",
+      "portraits": [
+        {
+          "path": "frog.png",
+          "position": "INLINE"
+        } 
+      ],
+      "text": "Aha! See, I knew you would make it!",
+      "audio": "entity.frog_1_0",
+      "next": "1"
+    },
+    {
+      "id": "1",
+      "speaker": "Janitor",
+      "portraits": [
+        {
+          "path": "frog.png",
+          "position": "INLINE"
+        } 
+      ],
+      "text": "Disastrously, these rodents seem to appear without bound! There are still so many more to clean up!",
+      "audio": "entity.frog_1_1",
+      "next": "2"
+    },
+    {
+      "id": "2",
+      "speaker": "Janitor",
+      "portraits": [
+        {
+          "path": "frog.png",
+          "position": "INLINE"
+        } 
+      ],
+      "text": "And beware! They tend to settle on lower floors, and they thus become even more perilous!",
+      "audio": "entity.frog_1_2",
+      "next": "3"
+    },
+    {
+      "id": "3",
+      "speaker": "Janitor",
+      "portraits": [
+        {
+          "path": "frog.png",
+          "position": "INLINE"
+        } 
+      ],
+      "text": "Proceed with caution! But remember: your bravery will be rewarded plentifully!",
+      "audio": "entity.frog_1_3"
+    }
+  ]
+}

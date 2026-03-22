@@ -1,0 +1,134 @@
+{
+  "id": "gcat_goodbye",
+  "start": "0",
+  "entries": [
+    {
+      "id": "0",
+      "speaker": "Casino Master",
+      "portraits": [
+        {
+          "path": "gcat.png",
+          "position": "INLINE"
+        } 
+      ],
+      "text": "Oh, congrats, you won uhh....",
+      "audio": "entity.gcat_goodbye_0",
+      "next": "1",
+
+			"command": [
+				"stopsound @p music"
+			]
+    },
+    {
+      "id": "1",
+      "speaker": "Casino Master",
+      "portraits": [
+        {
+          "path": "gcat.png",
+          "position": "INLINE"
+        } 
+      ],
+      "text": "What is this actually?",
+      "audio": "entity.gcat_goodbye_1",
+      "next": "2"
+    },
+    {
+      "id": "2",
+      "speaker": "Casino Master",
+      "portraits": [
+        {
+          "path": "gcat.png",
+          "position": "INLINE"
+        } 
+      ],
+      "text": "\"Win the pack\"? What does that even mean?",
+      "audio": "entity.gcat_goodbye_2",
+      "next": "3"
+    },
+    {
+      "id": "3",
+      "speaker": "Casino Master",
+      "portraits": [
+        {
+          "path": "gcat.png",
+          "position": "INLINE"
+        } 
+      ],
+      "text": "...wait, no, NO-",
+      "audio": "entity.gcat_goodbye_3",
+      "next": "4"
+    },
+    {
+      "id": "4",
+      "speaker": "Casino Master",
+      "portraits": [
+        {
+          "path": "gcat.png",
+          "position": "INLINE"
+        } 
+      ],
+      "text": "PLEASE, just- just play one more game",
+      "audio": "entity.gcat_goodbye_4",
+      "next": "5"
+    },
+    {
+      "id": "5",
+      "speaker": "Casino Master",
+      "portraits": [
+        {
+          "path": "gcat.png",
+          "position": "INLINE"
+        } 
+      ],
+      "text": "Just- just stay okay? Don't go.",
+      "audio": "entity.gcat_goodbye_5",
+      "next": "6",
+
+			"command": [
+				"playsound gambleth:music.end music @p"
+			]
+    },
+    {
+      "id": "6",
+      "speaker": "Casino Master",
+      "portraits": [
+        {
+          "path": "gcat.png",
+          "position": "INLINE"
+        } 
+      ],
+      "text": "WHY IS THE CREDITS MUSIC PLAYING",
+      "audio": "entity.gcat_goodbye_6",
+      "next": "7"
+    },
+    {
+      "id": "7",
+      "speaker": "Casino Master",
+      "portraits": [
+        {
+          "path": "gcat.png",
+          "position": "INLINE"
+        } 
+      ],
+      "text": "PLEASE I WILL DO ANYTHING I JUST NEED YOU TO STAY",
+      "audio": "entity.gcat_goodbye_7",
+      "next": "8"
+    },
+    {
+      "id": "8",
+      "speaker": "Casino Master",
+      "portraits": [
+        {
+          "path": "gcat.png",
+          "position": "INLINE"
+        } 
+      ],
+      "text": "PLEASE STAY I NEED YOUR MONEY PLEA-",
+      "audio": "entity.gcat_goodbye_8",
+
+			"command": [
+				"openguiscreen ending_screen @p"
+			]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "frog_2",
+  "start": "0",
+  "entries": [
+    {
+      "id": "0",
+      "speaker": "Janitor",
+      "portraits": [
+        {
+          "path": "frog.png",
+          "position": "INLINE"
+        } 
+      ],
+      "text": "Perfecting the art of wizardry requires extensive training, so I'd advise you to return to your task posthaste!",
+      "audio": "entity.frog_2"
+    }
+  ]
+}

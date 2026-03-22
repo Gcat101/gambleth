@@ -1,0 +1,147 @@
+{
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "gambleth:test_unique_room",
+        "processors": [
+          {
+            "processor_type": "minecraft:rule",
+            "rules": [
+              {
+                "location_predicate": {
+                  "predicate_type": "minecraft:always_true"
+                },
+                "input_predicate": {
+                  "predicate_type": "minecraft:blockstate_match",
+                  "block_state": {
+                    "Name": "minecraft:furnace",
+                    "Properties": {
+                      "facing": "north"
+                    }
+                  }
+                },
+                "output_state": {
+                  "Name": "minecraft:magenta_glazed_terracotta",
+                  "Properties": {
+                    "facing": "north"
+                  }
+                },
+                "block_entity_modifier": {
+                  "type": "minecraft:append_static",
+                  "data": {
+                    "data": {
+                      "signifierId": "test"
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "processor_type": "minecraft:rule",
+            "rules": [
+              {
+                "location_predicate": {
+                  "predicate_type": "minecraft:always_true"
+                },
+                "input_predicate": {
+                  "predicate_type": "minecraft:blockstate_match",
+                  "block_state": {
+                    "Name": "minecraft:furnace",
+                    "Properties": {
+                      "facing": "east"
+                    }
+                  }
+                },
+                "output_state": {
+                  "Name": "minecraft:magenta_glazed_terracotta",
+                  "Properties": {
+                    "facing": "east"
+                  }
+                },
+                "block_entity_modifier": {
+                  "type": "minecraft:append_static",
+                  "data": {
+                    "data": {
+                      "signifierId": "test"
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "processor_type": "minecraft:rule",
+            "rules": [
+              {
+                "location_predicate": {
+                  "predicate_type": "minecraft:always_true"
+                },
+                "input_predicate": {
+                  "predicate_type": "minecraft:blockstate_match",
+                  "block_state": {
+                    "Name": "minecraft:furnace",
+                    "Properties": {
+                      "facing": "west"
+                    }
+                  }
+                },
+                "output_state": {
+                  "Name": "minecraft:magenta_glazed_terracotta",
+                  "Properties": {
+                    "facing": "west"
+                  }
+                },
+                "block_entity_modifier": {
+                  "type": "minecraft:append_static",
+                  "data": {
+                    "data": {
+                      "signifierId": "test"
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "processor_type": "minecraft:rule",
+            "rules": [
+              {
+                "location_predicate": {
+                  "predicate_type": "minecraft:always_true"
+                },
+                "input_predicate": {
+                  "predicate_type": "minecraft:blockstate_match",
+                  "block_state": {
+                    "Name": "minecraft:furnace",
+                    "Properties": {
+                      "facing": "south"
+                    }
+                  }
+                },
+                "output_state": {
+                  "Name": "minecraft:magenta_glazed_terracotta",
+                  "Properties": {
+                    "facing": "south"
+                  }
+                },
+                "block_entity_modifier": {
+                  "type": "minecraft:append_static",
+                  "data": {
+                    "data": {
+                      "signifierId": "test"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

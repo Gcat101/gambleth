@@ -1,0 +1,18 @@
+{
+  "id": "gcat_0",
+  "start": "0",
+  "entries": [
+    {
+      "id": "0",
+      "speaker": "Casino Master",
+      "portraits": [
+        {
+          "path": "gcat.png",
+          "position": "INLINE"
+        } 
+      ],
+      "text": "Go talk to the janitor in the basement, he's waiting for you.",
+      "audio": "entity.gcat_0"
+    }
+  ]
+}

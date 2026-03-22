@@ -1,0 +1,135 @@
+{
+  "id": "gcat_1",
+  "start": "0",
+  "entries": [
+    {
+      "id": "0",
+      "speaker": "Casino Master",
+      "portraits": [
+        {
+          "path": "gcat.png",
+          "position": "INLINE"
+        } 
+      ],
+      "text": "Oh hey, you're back!",
+      "audio": "entity.gcat_1_0",
+      "next": "1"
+    },
+    {
+      "id": "1",
+      "speaker": "Casino Master",
+      "portraits": [
+        {
+          "path": "gcat.png",
+          "position": "INLINE"
+        } 
+      ],
+      "text": "I've decided to land you a helping hand.",
+      "audio": "entity.gcat_1_1",
+      "next": "2"
+    },
+    {
+      "id": "2",
+      "speaker": "Casino Master",
+      "portraits": [
+        {
+          "path": "gcat.png",
+          "position": "INLINE"
+        } 
+      ],
+      "text": "You might've noticed the new slot machines last time you were here. They don't give you money, however if you win in them, I will send some of my... let's just say goons to put some extra loot in the basement for you to find.",
+      "audio": "entity.gcat_1_2",
+      "next": "3"
+    },
+    {
+      "id": "3",
+      "speaker": "Casino Master",
+      "portraits": [
+        {
+          "path": "gcat.png",
+          "position": "INLINE"
+        } 
+      ],
+      "text": "Why can't they clean up the basement themselves then? Well...",
+      "audio": "entity.gcat_1_3",
+      "next": "4"
+    },
+    {
+      "id": "4",
+      "speaker": "Casino Master",
+      "portraits": [
+        {
+          "path": "gcat.png",
+          "position": "INLINE"
+        } 
+      ],
+      "text": "(...hm, good idea actually)",
+      "audio": "entity.gcat_1_4",
+      "next": "5"
+    },
+    {
+      "id": "5",
+      "speaker": "Casino Master",
+      "portraits": [
+        {
+          "path": "gcat.png",
+          "position": "INLINE"
+        } 
+      ],
+      "text": "And that, kids, is why you should return the money you borrow from me in time, tehe.",
+      "audio": "entity.gcat_1_5",
+      "next": "6"
+    },
+    {
+      "id": "6",
+      "speaker": "Casino Master",
+      "portraits": [
+        {
+          "path": "gcat.png",
+          "position": "INLINE"
+        } 
+      ],
+      "text": "Anyway, there are six types of machines I got installed: weapons, armor, potions, miscellaneous tools - these are pretty self-explanatory.",
+      "audio": "entity.gcat_1_6",
+      "next": "7"
+    },
+    {
+      "id": "7",
+      "speaker": "Casino Master",
+      "portraits": [
+        {
+          "path": "gcat.png",
+          "position": "INLINE"
+        } 
+      ],
+      "text": "There's also one that I will give you a bigger backpack for every time you win, allowing you to carry more stuff. There is a chance for you to fail so spectacularly that I will actually swap it with a smaller one though, it's not interesting if there's no risk.",
+      "audio": "entity.gcat_1_7",
+      "next": "8"
+    },
+    {
+      "id": "8",
+      "speaker": "Casino Master",
+      "portraits": [
+        {
+          "path": "gcat.png",
+          "position": "INLINE"
+        } 
+      ],
+      "text": "...oh and there is also one in the back, I don't know what that does, the guy who installed it was very unclear about that. Try and see I guess.",
+      "audio": "entity.gcat_1_8",
+      "next": "9"
+    },
+    {
+      "id": "9",
+      "speaker": "Casino Master",
+      "portraits": [
+        {
+          "path": "gcat.png",
+          "position": "INLINE"
+        } 
+      ],
+      "text": "Anyway, if you keep bringing me those chips I'll reward you for them. Good luck.",
+      "audio": "entity.gcat_1_9"
+    }
+  ]
+}

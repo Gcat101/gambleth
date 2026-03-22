@@ -1,0 +1,31 @@
+{
+  "id": "frog_0",
+  "start": "0",
+  "entries": [
+    {
+      "id": "0",
+      "speaker": "Janitor",
+      "portraits": [
+        {
+          "path": "frog.png",
+          "position": "INLINE"
+        } 
+      ],
+      "text": "I will be casting all of my mightiest spells upon you, young traveler.",
+      "audio": "entity.frog_0_0",
+      "next": "1"
+    },
+    {
+      "id": "1",
+      "speaker": "Janitor",
+      "portraits": [
+        {
+          "path": "frog.png",
+          "position": "INLINE"
+        } 
+      ],
+      "text": "Go and show these vermin what the indomitable wizard spirit is capable of!",
+      "audio": "entity.frog_0_1"
+    }
+  ]
+}

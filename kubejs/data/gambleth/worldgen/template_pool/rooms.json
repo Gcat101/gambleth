@@ -1,0 +1,23 @@
+{
+  "fallback": "gambleth:end_rooms",
+  "elements": [
+    {
+      "weight": 2,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "gambleth:regular_room",
+        "processors": "gambleth:room_interior"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "gambleth:wall_room",
+        "processors": "gambleth:room_interior"
+      }
+    }
+  ]
+}

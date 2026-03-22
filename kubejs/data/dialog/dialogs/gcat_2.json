@@ -1,0 +1,31 @@
+{
+  "id": "gcat_2",
+  "start": "0",
+  "entries": [
+    {
+      "id": "0",
+      "speaker": "Casino Master",
+      "portraits": [
+        {
+          "path": "gcat.png",
+          "position": "INLINE"
+        } 
+      ],
+      "text": "Wassup!",
+      "audio": "entity.gcat_2_0",
+      "next": "1"
+    },
+    {
+      "id": "1",
+      "speaker": "Casino Master",
+      "portraits": [
+        {
+          "path": "gcat.png",
+          "position": "INLINE"
+        } 
+      ],
+      "text": "Remember, one gamble a day keeps the death by starvation away!",
+      "audio": "entity.gcat_2_1"
+    }
+  ]
+}

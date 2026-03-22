@@ -1,0 +1,32 @@
+{
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 128,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "gambleth:end_room",
+        "processors": "gambleth:room_interior"
+      }
+    },
+    {
+      "weight": 32,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "gambleth:loot_room",
+        "processors": "gambleth:room_interior"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "gambleth:wall_room",
+        "processors": "gambleth:room_interior"
+      }
+    }
+  ]
+}

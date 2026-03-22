@@ -1,0 +1,14 @@
+type = user_variables
+
+variable {
+  name = beatPack
+  value = true
+  reset_on_launch = false
+}
+
+variable {
+  name = inRun
+  value = false
+  reset_on_launch = false
+}
+

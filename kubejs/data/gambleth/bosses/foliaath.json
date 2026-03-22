@@ -1,0 +1,34 @@
+{
+	"entity": "mowziesmobs:foliaath",
+	"weight": 0,
+	"quality": 0,
+	"size": {
+		"width": 1,
+		"height": 1
+	},
+	"valid_gear_sets": [
+		"apotheosis:overworld/leather",
+		"apotheosis:overworld/iron"
+	],
+	"dimensions": [],
+	"min_rarity": "uncommon",
+	"max_rarity": "uncommon",
+	"stats": {
+		"uncommon": {
+			"enchant_chance": 0.35,
+			"enchantment_levels": [5, 5, 5, 5],
+			"effects": [],
+			"attribute_modifiers": [
+				{
+					"attribute": "minecraft:generic.max_health",
+					"operation": "ADDITION",
+					"value": {
+						"min": 15,
+						"steps": 6,
+						"step": 10
+					}
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,70 @@
+{
+    "block.slot_machine_process": {
+        "sounds": [
+            "gambleth:slot_machine_process"
+        ]
+    },
+    "block.slot_machine_fail": {
+        "sounds": [
+            "gambleth:slot_machine_fail"
+        ]
+    },
+    "block.slot_machine_success": {
+        "sounds": [
+            "gambleth:slot_machine_success"
+        ]
+    },
+
+    "music.hub": {
+        "sounds": [
+            {
+                "name": "gambleth:aim_wereclosinginfiveminutes",
+                "volume": 0.05,
+                "stream": true
+            },
+            {
+                "name": "gambleth:m1ndbreaker_sozdalvapor",
+                "volume": 0.05,
+                "stream": true
+            }
+        ]
+    },
+    "music.run": {
+        "sounds": [
+            {
+                "name": "gambleth:8bitek_agardenofmidnightdreams",
+                "volume": 0.1,
+                "stream": true
+            },
+            {
+                "name": "gambleth:8bitek_deathofneuron",
+                "volume": 0.1,
+                "stream": true
+            },
+            {
+                "name": "gambleth:polynomial22_emphasis",
+                "volume": 0.1,
+                "stream": true
+            },
+            {
+                "name": "gambleth:wakerlink_omnipresent",
+                "volume": 0.1,
+                "stream": true
+            },
+            {
+                "name": "gambleth:cheemingbepis_wannajungle",
+                "volume": 0.1,
+                "stream": true
+            }
+        ]
+    },
+    "music.end": {
+        "sounds": [
+            {
+                "name": "gambleth:tanger_badnumber",
+                "volume": 0.15,
+                "stream": true
+            }
+        ]
+    }
+}

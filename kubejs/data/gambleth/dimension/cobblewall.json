@@ -1,0 +1,17 @@
+{
+  "type": "gambleth:dim_type",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "gambleth:cobblewall_biome",
+      "lakes": false,
+      "features": false,
+      "layers": [
+        {
+          "height": 320,
+          "block": "minecraft:cobblestone"
+        }
+      ]
+    }
+  }
+}

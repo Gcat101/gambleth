@@ -1,0 +1,23 @@
+{
+	"entity": "mowziesmobs:frostmaw",
+	"weight": 0,
+	"quality": 0,
+	"size": {
+		"width": 1,
+		"height": 1
+	},
+	"valid_gear_sets": [
+		"gambleth:diamond"
+	],
+	"dimensions": [],
+	"min_rarity": "epic",
+	"max_rarity": "epic",
+	"stats": {
+		"epic": {
+			"enchant_chance": 0.0,
+			"enchantment_levels": [15, 15, 15, 15],
+			"effects": [],
+			"attribute_modifiers": []
+		}
+	}
+}

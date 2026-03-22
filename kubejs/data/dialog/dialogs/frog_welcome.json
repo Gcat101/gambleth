@@ -1,0 +1,174 @@
+{
+  "id": "frog_welcome",
+  "start": "0",
+  "entries": [
+    {
+      "id": "0",
+      "speaker": "Janitor",
+      "portraits": [
+        {
+          "path": "frog.png",
+          "position": "INLINE"
+        } 
+      ],
+      "text": "GREETINGS!",
+      "audio": "entity.frog_welcome_0",
+      "next": "1"
+    },
+    {
+      "id": "1",
+      "speaker": "Janitor",
+      "portraits": [
+        {
+          "path": "frog.png",
+          "position": "INLINE"
+        } 
+      ],
+      "text": "Welcome to my humble lair, fellow traveler! Make yourself at home!",
+      "audio": "entity.frog_welcome_1",
+      "next": "2"
+    },
+    {
+      "id": "2",
+      "speaker": "Janitor",
+      "portraits": [
+        {
+          "path": "frog.png",
+          "position": "INLINE"
+        } 
+      ],
+      "text": "Ah, I see, you've been sent here by the one and only Casino Master himself.",
+      "audio": "entity.frog_welcome_2",
+      "next": "3"
+    },
+    {
+      "id": "3",
+      "speaker": "Janitor",
+      "portraits": [
+        {
+          "path": "frog.png",
+          "position": "INLINE"
+        } 
+      ],
+      "text": "Finally, he has heard my pleas for a new apprentice! He's had me doing all this poorman's labor for nary a pence! Huzzah!",
+      "audio": "entity.frog_welcome_3",
+      "next": "4"
+    },
+    {
+      "id": "4",
+      "speaker": "Janitor",
+      "portraits": [
+        {
+          "path": "frog.png",
+          "position": "INLINE"
+        } 
+      ],
+      "text": "Alright, allow me to show you the dwelling where you will be practicing your sorcery.",
+      "audio": "entity.frog_welcome_4",
+      "next": "5"
+    },
+    {
+      "id": "5",
+      "speaker": "Janitor",
+      "portraits": [
+        {
+          "path": "frog.png",
+          "position": "INLINE"
+        } 
+      ],
+      "text": "Behind me is an entrance to a long-forgotten chamber, where no mortal has dared to set foot.",
+      "audio": "entity.frog_welcome_5",
+      "next": "6"
+    },
+    {
+      "id": "6",
+      "speaker": "Janitor",
+      "portraits": [
+        {
+          "path": "frog.png",
+          "position": "INLINE"
+        } 
+      ],
+      "text": "(except for me, of course)",
+      "audio": "entity.frog_welcome_6",
+      "next": "7"
+    },
+    {
+      "id": "7",
+      "speaker": "Janitor",
+      "portraits": [
+        {
+          "path": "frog.png",
+          "position": "INLINE"
+        } 
+      ],
+      "text": "However, I am in no shape to venture deeper, as just a few blue moons ago, I contracted a paralyzing case of Wizard's Athlete's Foot!",
+      "audio": "entity.frog_welcome_7",
+      "next": "8"
+    },
+    {
+      "id": "8",
+      "speaker": "Janitor",
+      "portraits": [
+        {
+          "path": "frog.png",
+          "position": "INLINE"
+        } 
+      ],
+      "text": "But forsooth, traveler! If you are brave, step into the hole behind me. And fear not the fall - it will cause you no harm.",
+      "audio": "entity.frog_welcome_8",
+      "next": "9"
+    },
+    {
+      "id": "9",
+      "speaker": "Janitor",
+      "portraits": [
+        {
+          "path": "frog.png",
+          "position": "INLINE"
+        } 
+      ],
+      "text": "What can wound you, however, are the fiends hiding in that dreadful dungeon! I have prepared a small allowance for anyone who is brave enough to dispatch them.",
+      "audio": "entity.frog_welcome_9",
+      "next": "10"
+    },
+    {
+      "id": "10",
+      "speaker": "Janitor",
+      "portraits": [
+        {
+          "path": "frog.png",
+          "position": "INLINE"
+        } 
+      ],
+      "text": "Along the way, you may also find belongings I forgot a long time ago. Pharaoh willing, they will help you along your expedition.",
+      "audio": "entity.frog_welcome_10",
+      "next": "11"
+    },
+    {
+      "id": "11",
+      "speaker": "Janitor",
+      "portraits": [
+        {
+          "path": "frog.png",
+          "position": "INLINE"
+        } 
+      ],
+      "text": "Now gather your courage and go! T'would be rude to deny the request of a wizened wizard like myself.",
+      "audio": "entity.frog_welcome_11",
+      "next": "12"
+    },
+    {
+      "id": "12",
+      "speaker": "Janitor",
+      "portraits": [
+        {
+          "path": "frog.png",
+          "position": "INLINE"
+        } 
+      ],
+      "text": "I will be here whenever you need me, and may fortune be on your side!",
+      "audio": "entity.frog_welcome_12"
+    }
+  ]
+}
