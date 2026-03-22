@@ -13,8 +13,7 @@ This modpack has been made for the [Just Enough Opinions Packjam 2](https://disc
 
 This was probably the most fun I had while making a modpack, probably because creating this required my knowledge in a lot of areas I like engaging in - unconventional KubeJS scripts, voice acting, drum-n-bass music picking from newgrounds, fun stuff!
 
-I now have made [a separate Discord](
-https://discord.gg/hcTbpfcybW) linked in the project socials tab for my solo packs. Do join that if you want to discuss strategies for this pack or my previous entry to the first packjam - [The Gardener Was Replaced](https://www.curseforge.com/minecraft/modpacks/the-gardener-was-replaced). Also join the [JEOcord](https://discord.gg/q6awVhcPeJ), that's the project I currently put most of my time into so it would be nice to see more people join <3
+I now have made [a separate Discord](https://discord.gg/hcTbpfcybW) linked in the project socials tab for my solo packs. Do join that if you want to discuss strategies for this pack or my previous entry to the first packjam - [The Gardener Was Replaced](https://www.curseforge.com/minecraft/modpacks/the-gardener-was-replaced). Also join the [JEOcord](https://discord.gg/q6awVhcPeJ), that's the project I currently put most of my time into so it would be nice to see more people join <3
 
 ## Credits
 
