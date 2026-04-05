@@ -629,6 +629,123 @@
             ]
         },
         {
+            "pakku_id": "uRD1C6U2Nmi1Eoy9",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "easy-npc"
+            },
+            "name": {
+                "curseforge": "Easy NPC"
+            },
+            "id": {
+                "curseforge": "559312"
+            },
+            "redistributable": false,
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "easy_npc_bundle-forge-1.20.1-6.11.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7776/986/easy_npc_bundle-forge-1.20.1-6.11.0.jar",
+                    "id": "7776986",
+                    "parent_id": "559312",
+                    "hashes": {
+                        "sha1": "9133b87cdb6b45a33cd9791736184fc2018c0229",
+                        "md5": "336e844cfb96f00b77966b933e2ac3da"
+                    },
+                    "required_dependencies": [],
+                    "size": 25442,
+                    "date_published": "2026-03-18T18:18:24.193Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "yCGXJHHXIE1IpWLT",
+            "pakku_links": [
+                "E5lVlBnPYIKxnfcE"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "easy-npc-config-ui"
+            },
+            "name": {
+                "curseforge": "Easy NPC: Config UI"
+            },
+            "id": {
+                "curseforge": "1214728"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "easy_npc_config_ui-forge-1.20.1-6.11.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7776/927/easy_npc_config_ui-forge-1.20.1-6.11.0.jar",
+                    "id": "7776927",
+                    "parent_id": "1214728",
+                    "hashes": {
+                        "sha1": "b6fdb8bfaa0378a6c4d1b1e29ef628d53f0c1240",
+                        "md5": "bfe1be4d6c1101ba0679d5d2e81b9ccb"
+                    },
+                    "required_dependencies": [
+                        "1308987"
+                    ],
+                    "size": 742082,
+                    "date_published": "2026-03-18T18:06:41.253Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "E5lVlBnPYIKxnfcE",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "easy-npc-core"
+            },
+            "name": {
+                "curseforge": "Easy NPC: Core"
+            },
+            "id": {
+                "curseforge": "1308987"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "easy_npc-forge-1.20.1-6.11.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7776/983/easy_npc-forge-1.20.1-6.11.0.jar",
+                    "id": "7776983",
+                    "parent_id": "1308987",
+                    "hashes": {
+                        "sha1": "a511aaf60805164d5e389a45500083462b17d30b",
+                        "md5": "6c7bf210e965fe4570549793ccbf0c80"
+                    },
+                    "required_dependencies": [],
+                    "size": 1947786,
+                    "date_published": "2026-03-18T18:17:46.337Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "07dFna2L6Ht0me3k",
             "pakku_links": [
                 "T903EpKZs0HsgMlC",
@@ -1794,6 +1911,42 @@
                     "required_dependencies": [],
                     "size": 38506,
                     "date_published": "2024-01-23T14:45:52.293Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "GX6ltJXwWwQqd1gw",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "tinyinv"
+            },
+            "name": {
+                "curseforge": "TinyInv"
+            },
+            "id": {
+                "curseforge": "455299"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "tinyinv-1.20.1-1.1.0.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5234/306/tinyinv-1.20.1-1.1.0.1.jar",
+                    "id": "5234306",
+                    "parent_id": "455299",
+                    "hashes": {
+                        "sha1": "7cefe6873d7bf1ca501b6e2ca0063a2cb02d2004",
+                        "md5": "cc7d122e52a2648d15a2f59af7f8ce27"
+                    },
+                    "required_dependencies": [],
+                    "size": 122355,
+                    "date_published": "2024-04-04T02:31:19.853Z"
                 }
             ]
         },

@@ -1,9 +1,10 @@
 {
     "name": "Gambleth",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "overrides": [
         "config",
         "defaultconfig",
-        "kubejs"
+        "kubejs",
+        "easy_npc"
     ]
 }
