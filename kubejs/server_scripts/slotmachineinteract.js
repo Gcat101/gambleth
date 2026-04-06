@@ -97,6 +97,7 @@ const OUTCOMES = {
     "loot": {
         "minecraft:bow": 100,
         "minecraft:crossbow": 80,
+        "minecraft:shield": 90,
         "minecraft:trident": 50,
 
         "minecraft:golden_apple": 50,

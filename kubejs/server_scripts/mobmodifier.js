@@ -65,6 +65,9 @@ EntityEvents.spawned(event => {
         case "rats:rat":
             entity.mergeNbt({ColorVariant: "rats:" + global.randomPick(["brown", "green", "blue", "black"])})
             break
+        case "mowziesmobs:lantern":
+            server.schedule(10, () => server.runCommandSilent(`scale set pehkui:hitbox_height 2 ${entity.stringUuid}`))
+            break
         case "alexsmobs:leafcutter_ant":
             server.schedule(10, () => server.runCommandSilent(`scale set pehkui:hitbox_height 16 ${entity.stringUuid}`))
             break
@@ -76,6 +79,9 @@ EntityEvents.spawned(event => {
             break
         case "minecraft:skeleton":
             if (Math.random() < .75) entity.setItemInHand($InteractionHand.MAIN_HAND, Item.of("minecraft:bow"))
+            break
+        case "mowziesmobs:foliaath":
+            server.schedule(10, () => server.runCommandSilent(`scale set pehkui:hitbox_width 5 ${entity.stringUuid}`))
             break
     }
 })

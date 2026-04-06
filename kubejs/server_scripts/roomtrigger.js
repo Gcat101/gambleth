@@ -31,7 +31,7 @@ const SPAWNABLE_BOSSES = {
     "1": [
         "slime",
         "rat",
-        "ant"
+        // "ant" // ! UNUSED
     ],
     "5": [
         "zombie",

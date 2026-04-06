@@ -128,6 +128,7 @@ PlayerEvents.chestOpened(event => {
 
     mainItems = addLootItemWithUnlock(player, mainItems, "minecraft:bow")
     mainItems = addLootItemWithUnlock(player, mainItems, "minecraft:crossbow", floorPerdicate(10))
+    mainItems = addLootItemWithUnlock(player, mainItems, "minecraft:shield", floorPerdicate(3))
     mainItems = addLootItemWithUnlock(player, mainItems, "minecraft:trident", floorPerdicate(10))
 
     mainItems = addLootItemWithUnlock(player, mainItems, "gunswithoutroses:gold_gun", floorPerdicate(5))
