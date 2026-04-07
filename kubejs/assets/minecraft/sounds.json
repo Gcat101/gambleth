@@ -1,0 +1,11 @@
+{
+    "music.menu": {
+        "replace": true,
+        "sounds": [
+            {
+                "name": "gambleth:nighthawk22_anomaly",
+                "stream": true
+            }
+        ]
+    }
+}
