@@ -1,6 +1,6 @@
 {
     "name": "Gambleth",
-    "version": "1.0.3",
+    "version": "1.0.3-hotfix-1",
     "overrides": [
         "config",
         "defaultconfig",

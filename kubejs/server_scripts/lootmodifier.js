@@ -59,7 +59,7 @@ let bowPredicate = itemsPredicate(["minecraft:bow", "minecraft:crossbow"])
 let gunPredicate = itemsPredicate(Ingredient.of("#gunswithoutroses:gun").itemIds)
 
 let addWeaponsWithUnlock = (player, arr, material, predicate) => addWeaponsOfMaterial(player, arr, material, p => unlockPerdicate(material + "_weapons")(p) && (!predicate || predicate(p)))
-let addArmorWithUnlock = (player, arr, material, predicate) => addWeaponsOfMaterial(player, arr, material, p => unlockPerdicate(material + "_armor")(p) && (!predicate || predicate(p)))
+let addArmorWithUnlock = (player, arr, material, predicate) => addArmorOfMaterial(player, arr, material, p => unlockPerdicate(material + "_armor")(p) && (!predicate || predicate(p)))
 let addPotionsWithUnlock = (player, arr, type, predicate) => addPotionsOfType(player, arr, type, p => unlockPerdicate(type + "_potions")(p) && (!predicate || predicate(p)))
 let addLootItemWithUnlock = (player, arr, item, predicate) => addLootItem(player, arr, item, p => unlockPerdicate(item + "_loot")(p) && (!predicate || predicate(p)))
 
