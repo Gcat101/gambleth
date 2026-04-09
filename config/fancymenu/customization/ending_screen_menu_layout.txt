@@ -614,7 +614,7 @@ element {
 
 element {
   interactable = true
-  source = [8-BITek - A Garden of Midnight Dreams](https://www.newgrounds.com/audio/listen/15410388)%n%[8-BITek - Death of neuron](https://www.newgrounds.com/audio/listen/1535244)%n%[Cheeming-Bepis - WannaJungle?](https://www.newgrounds.com/audio/listen/1539355)%n%[WakerLink - omnipresent](https://www.newgrounds.com/audio/listen/1216127)
+  source = [8-BITek - A Garden of Midnight Dreams](https://www.newgrounds.com/audio/listen/1541038)%n%[8-BITek - Death of neuron](https://www.newgrounds.com/audio/listen/1535244)%n%[Cheeming-Bepis - WannaJungle?](https://www.newgrounds.com/audio/listen/1539355)%n%[WakerLink - omnipresent](https://www.newgrounds.com/audio/listen/1216127)
   source_mode = direct
   shadow = true
   scale = 1.0

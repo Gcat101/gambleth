@@ -14,6 +14,7 @@ EntityEvents.death("player", event => {
     if (global.getSurvivorsOtherThanPlayer(server, player).length) {
         player.health = player.maxHealth
         player.setGameMode("spectator")
+        player.inventory.clear()
         event.cancel()
     } else global.killEVERYONE(server)
 })

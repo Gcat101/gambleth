@@ -49,7 +49,9 @@ EntityEvents.spawned(event => {
     let customScale = Object.keys(CUSTOM_SCALES).indexOf(type) >= 0
     let minScale = customScale ? CUSTOM_SCALES[type][0] : DEFAULT_MIN_SCALE
     let maxScale = customScale ? CUSTOM_SCALES[type][1] : DEFAULT_MAX_SCALE
-    server.schedule(10, () => server.runCommandSilent(`scale set pehkui:base ${global.randomFloat(minScale, maxScale) * (boss ? 1.5 : 1)} ${entity.stringUuid}`))
+    let scale = global.randomFloat(minScale, maxScale) * (boss ? 1.5 : 1)
+
+    server.schedule(10, () => server.runCommandSilent(`scale set pehkui:base ${scale} ${entity.stringUuid}`))
 
     if (Object.keys(CUSTOM_HEALTH).indexOf(type) >= 0) {
         let health = CUSTOM_HEALTH[type]
@@ -81,7 +83,7 @@ EntityEvents.spawned(event => {
             if (Math.random() < .75) entity.setItemInHand($InteractionHand.MAIN_HAND, Item.of("minecraft:bow"))
             break
         case "mowziesmobs:foliaath":
-            server.schedule(10, () => server.runCommandSilent(`scale set pehkui:hitbox_width 5 ${entity.stringUuid}`))
+            server.schedule(10, () => server.runCommandSilent(`scale set pehkui:hitbox_width ${5.5 * (1 / scale)} ${entity.stringUuid}`))
             break
     }
 })

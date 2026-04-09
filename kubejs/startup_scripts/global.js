@@ -16,7 +16,7 @@ global.tagToStringList = tag => {
 }
 
 global.getSurvivorsOtherThanPlayer = (server, player) => server.playerList.players.filter(p => (
-    p.name.string != player.name.string &&
+    (player == null || p.name.string != player.name.string) &&
     !p.isSpectator() && !p.isCreative()
 ))
 global.killEVERYONE = server => server.playerList.players.forEach(p => {
