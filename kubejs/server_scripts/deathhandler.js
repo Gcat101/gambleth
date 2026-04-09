@@ -9,12 +9,11 @@ EntityEvents.death("player", event => {
     let { player, server } = event
 
     player.sendData("set_fm_variable", {key: "inRun", value: "false"})
-    player.inventory.clear()
+    Utils.server.runCommandSilent(`clear ${player.name.string}`)
 
     if (global.getSurvivorsOtherThanPlayer(server, player).length) {
         player.health = player.maxHealth
         player.setGameMode("spectator")
-        player.inventory.clear()
         event.cancel()
     } else global.killEVERYONE(server)
 })
