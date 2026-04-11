@@ -20,8 +20,10 @@ global.getSurvivorsOtherThanPlayer = (server, player) => server.playerList.playe
     !p.isSpectator() && !p.isCreative()
 ))
 global.killEVERYONE = server => server.playerList.players.forEach(p => {
+    p.tags.add("skip_death_logic")
     p.setGameMode("adventure")
     p.kill()
+    p.tags.remove("skip_death_logic")
 
     server.persistentData.remove("currentRunID")
 })

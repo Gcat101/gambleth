@@ -21,6 +21,10 @@ ServerEvents.commandRegistry(event => {
             global.tpPlayersToNextFloorAndPregen()
             return 1
         }))
+        .then(Commands.literal("kill_everyone").executes(ctx => {
+            global.killEVERYONE(ctx.source.server)
+            return 1
+        }))
         .then(Commands.literal("show_fake_chip_toast")
             .then(Commands.argument("player", Argument.PLAYER.create(event)).executes(ctx => {
                 let fakeChipToast = new Notification()

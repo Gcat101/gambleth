@@ -86,7 +86,7 @@ PlayerEvents.chestOpened(event => {
     mainItems = addWeaponsOfMaterial(player, mainItems, "minecraft:stone", floorPerdicate(4))
     mainItems = addArmorOfMaterial(player, mainItems, "minecraft:leather")
 
-    mainItems = addWeaponsWithUnlock(player, mainItems, "minecraft:golden", floorPerdicate(4))
+    mainItems = addWeaponsWithUnlock(player, mainItems, "minecraft:golden")
     mainItems = addWeaponsWithUnlock(player, mainItems, "minecraft:iron", floorPerdicate(7))
     mainItems = addWeaponsWithUnlock(player, mainItems, "minecraft:diamond", floorPerdicate(15))
     mainItems = addWeaponsWithUnlock(player, mainItems, "minecraft:netherite", floorPerdicate(30))
@@ -101,7 +101,7 @@ PlayerEvents.chestOpened(event => {
     mainItems = addWeaponsWithUnlock(player, mainItems, "armorplus:ender_dragon", floorPerdicate(25))
     mainItems = addWeaponsWithUnlock(player, mainItems, "armorplus:slayer", floorPerdicate(35))
 
-    mainItems = addArmorWithUnlock(player, mainItems, "minecraft:golden", floorPerdicate(4))
+    mainItems = addArmorWithUnlock(player, mainItems, "minecraft:golden")
     mainItems = addArmorWithUnlock(player, mainItems, "minecraft:iron", floorPerdicate(7))
     mainItems = addArmorWithUnlock(player, mainItems, "minecraft:diamond", floorPerdicate(15))
     mainItems = addArmorWithUnlock(player, mainItems, "minecraft:netherite", floorPerdicate(30))
@@ -116,15 +116,15 @@ PlayerEvents.chestOpened(event => {
     mainItems = addArmorWithUnlock(player, mainItems, "armorplus:ender_dragon", floorPerdicate(25))
     mainItems = addArmorWithUnlock(player, mainItems, "armorplus:slayer", floorPerdicate(35))
 
-    mainItems = addWeaponsWithUnlock(player, mainItems, "armorplus:chicken")
-    mainItems = addWeaponsWithUnlock(player, mainItems, "armorplus:slime", floorPerdicate(4))
-    mainItems = addWeaponsWithUnlock(player, mainItems, "armorplus:ardite", floorPerdicate(2))
-    mainItems = addWeaponsWithUnlock(player, mainItems, "armorplus:cobalt", floorPerdicate(2))
-    mainItems = addWeaponsWithUnlock(player, mainItems, "armorplus:knight_slime", floorPerdicate(10))
-    mainItems = addWeaponsWithUnlock(player, mainItems, "armorplus:pig_iron", floorPerdicate(10))
-    mainItems = addWeaponsWithUnlock(player, mainItems, "armorplus:manyullyn", floorPerdicate(15))
-    mainItems = addWeaponsWithUnlock(player, mainItems, "armorplus:frost", floorPerdicate(5))
-    mainItems = addWeaponsWithUnlock(player, mainItems, "armorplus:frost_lava", floorPerdicate(10))
+    mainItems = addArmorWithUnlock(player, mainItems, "armorplus:chicken")
+    mainItems = addArmorWithUnlock(player, mainItems, "armorplus:slime", floorPerdicate(4))
+    mainItems = addArmorWithUnlock(player, mainItems, "armorplus:ardite", floorPerdicate(2))
+    mainItems = addArmorWithUnlock(player, mainItems, "armorplus:cobalt", floorPerdicate(2))
+    mainItems = addArmorWithUnlock(player, mainItems, "armorplus:knight_slime", floorPerdicate(10))
+    mainItems = addArmorWithUnlock(player, mainItems, "armorplus:pig_iron", floorPerdicate(10))
+    mainItems = addArmorWithUnlock(player, mainItems, "armorplus:manyullyn", floorPerdicate(15))
+    mainItems = addArmorWithUnlock(player, mainItems, "armorplus:frost", floorPerdicate(5))
+    mainItems = addArmorWithUnlock(player, mainItems, "armorplus:frost_lava", floorPerdicate(10))
 
     mainItems = addLootItemWithUnlock(player, mainItems, "minecraft:bow")
     mainItems = addLootItemWithUnlock(player, mainItems, "minecraft:crossbow", floorPerdicate(10))
@@ -142,23 +142,20 @@ PlayerEvents.chestOpened(event => {
         Item.of("minecraft:apple", global.randomInt(1, 9))
     ]
 
-    sideItems = addLootItemWithUnlock(player, sideItems, "minecraft:golden_apple", floorPerdicate(5))
-    sideItems = addLootItemWithUnlock(player, sideItems, "minecraft:enchanted_golden_apple", floorPerdicate(10))
-
-    if (unlockPerdicate("minecraft:enchanted_golden_apple")(player)) {
-        if (unlockPerdicate("minecraft:golden_apple")(player) && floorPerdicate(5)(player)) sideItems.push(Item.of("minecraft:golden_apple", global.randomInt(1, 9)))
+    if (unlockPerdicate("minecraft:enchanted_golden_apple_loot")(player)) {
+        if (unlockPerdicate("minecraft:golden_apple_loot")(player) && floorPerdicate(5)(player)) sideItems.push(Item.of("minecraft:golden_apple", global.randomInt(1, 9)))
         if (floorPerdicate(10)(player)) sideItems.push(Item.of("minecraft:enchanted_golden_apple", global.randomInt(1, 5)))
     }
-    else if (unlockPerdicate("minecraft:golden_apple")(player) && floorPerdicate(5)(player)) sideItems.push(Item.of("minecraft:golden_apple", global.randomInt(1, 5)))
+    else if (unlockPerdicate("minecraft:golden_apple_loot")(player) && floorPerdicate(5)(player)) sideItems.push(Item.of("minecraft:golden_apple", global.randomInt(1, 5)))
 
     if (bowPredicate(player)) sideItems.push(Item.of("minecraft:arrow", global.randomInt(1, 9)))
     if (gunPredicate(player)) sideItems.push(Item.of(global.randomPick(Ingredient.of("#gunswithoutroses:bullet").itemIds), global.randomInt(1, 9)))
 
-    if (unlockPerdicate("supplementaries:bomb_blue")(player)) {
-        if (unlockPerdicate("supplementaries:bomb")(player)) sideItems.push(Item.of("supplementaries:bomb", global.randomInt(1, 9)))
+    if (unlockPerdicate("supplementaries:bomb_blue_loot")(player)) {
+        if (unlockPerdicate("supplementaries:bomb_loot")(player)) sideItems.push(Item.of("supplementaries:bomb", global.randomInt(1, 9)))
         sideItems.push(Item.of("supplementaries:bomb_blue", global.randomInt(1, 5)))
     }
-    else if (unlockPerdicate("supplementaries:bomb")(player)) sideItems.push(Item.of("supplementaries:bomb", global.randomInt(1, 5)))
+    else if (unlockPerdicate("supplementaries:bomb_loot")(player)) sideItems.push(Item.of("supplementaries:bomb", global.randomInt(1, 5)))
 
     let potions = []
     potions = addPotionsWithUnlock(player, potions, "minecraft:healing")

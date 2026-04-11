@@ -7,6 +7,7 @@ const MIN_SPECTATOR_Y = -8
 
 EntityEvents.death("player", event => {
     let { player, server } = event
+    if (player.tags.contains("skip_death_logic")) return
 
     player.sendData("set_fm_variable", {key: "inRun", value: "false"})
     Utils.server.runCommandSilent(`clear ${player.name.string}`)
@@ -20,4 +21,3 @@ EntityEvents.death("player", event => {
 EntityEvents.hurt("player", event => {
     if (event.source.is($DamageTypes.FALL)) event.cancel()
 })
-PlayerEvents.respawned(event => global.startBackgroundMusic(event.player, "hub"))

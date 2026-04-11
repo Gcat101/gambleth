@@ -52,5 +52,5 @@ PlayerEvents.loggedIn(event => {
     }
 })
 PlayerEvents.respawned(event => {
-    global.startBackgroundMusic(event.player, "hub")
+    if (event.level.dimension.toString() == STARTING_WORLD) global.startBackgroundMusic(event.player, "hub")
 })

@@ -125,7 +125,11 @@ let completeRoom = (level, maxPos, minPos) => {
     global.openDoorsInRoom(level, maxPos, minPos)
     if (pData.contains("defeatingBoss") && pData.getBoolean("defeatingBoss")) {
         let anchor = global.randomPick(global.getSurvivorsOtherThanPlayer(server, null))
-        server.playerList.players.filter(p => p.isSpectator()).forEach(p => p.teleportTo(anchor.x, anchor.y, anchor.z))
+        server.playerList.players.filter(p => p.isSpectator()).forEach(p => {
+            p.teleportTo(anchor.x, anchor.y, anchor.z)
+            p.setGameMode("adventure")
+            p.sendData("set_fm_variable", {key: "inRun", value: "true"})
+        })
 
         server.runCommandSilent(`execute in ${dim} run fill ${center.x - 1} ${center.y - 1} ${center.z - 1} ${center.x} ${center.y - 1} ${center.z - 1} minecraft:iron_trapdoor[half=top,open=true,facing=south]`)
         server.runCommandSilent(`execute in ${dim} run fill ${center.x - 1} ${center.y - 1} ${center.z} ${center.x} ${center.y - 1} ${center.z} minecraft:iron_trapdoor[half=top,open=true,facing=north]`)
