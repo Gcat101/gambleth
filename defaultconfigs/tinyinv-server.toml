@@ -2,7 +2,7 @@
 [general]
 	#The default number of slots
 	#Range: 0 ~ 36
-	inventory_slots = 2
+	inventory_slots = 5
 	#The default number of hotbar slots
 	#Range: 0 ~ 36
 	hotbar_slots = 9

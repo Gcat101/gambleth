@@ -3,6 +3,7 @@
 const LOOT_CHEST_TABLE_ID = "gambleth:loot_chest"
 const MAIN_ITEM_PLACEHOLDER = "minecraft:brick"
 const SIDE_ITEM_PLACEHOLDER = "minecraft:nether_brick"
+const CONDITIONAL_ITEM_PLACEHOLDER = "minecraft:rabbit_foot"
 
 const WEAPON_TYPES = ["sword", "axe", "battle_axe", "mace"]
 const ARMOR_TYPES = ["helmet", "chestplate", "leggings", "boots"]
@@ -71,6 +72,7 @@ LootJS.modifiers(event => {
         .addLootTableModifier("gambleth:loot_chest")
         .addLoot(MAIN_ITEM_PLACEHOLDER)
         .addLoot(SIDE_ITEM_PLACEHOLDER)
+        .addLoot(CONDITIONAL_ITEM_PLACEHOLDER)
 })
 EntityEvents.spawned("experience_orb", event => event.cancel())
 
@@ -148,15 +150,6 @@ PlayerEvents.chestOpened(event => {
     }
     else if (unlockPerdicate("minecraft:golden_apple_loot")(player) && floorPerdicate(5)(player)) sideItems.push(Item.of("minecraft:golden_apple", global.randomInt(1, 5)))
 
-    if (bowPredicate(player)) sideItems.push(Item.of("minecraft:arrow", global.randomInt(1, 9)))
-    if (gunPredicate(player)) sideItems.push(Item.of(global.randomPick(Ingredient.of("#gunswithoutroses:bullet").itemIds), global.randomInt(1, 9)))
-
-    if (unlockPerdicate("supplementaries:bomb_blue_loot")(player)) {
-        if (unlockPerdicate("supplementaries:bomb_loot")(player)) sideItems.push(Item.of("supplementaries:bomb", global.randomInt(1, 9)))
-        sideItems.push(Item.of("supplementaries:bomb_blue", global.randomInt(1, 5)))
-    }
-    else if (unlockPerdicate("supplementaries:bomb_loot")(player)) sideItems.push(Item.of("supplementaries:bomb", global.randomInt(1, 5)))
-
     let potions = []
     potions = addPotionsWithUnlock(player, potions, "minecraft:healing")
     potions = addPotionsWithUnlock(player, potions, "minecraft:strong_healing")
@@ -182,7 +175,21 @@ PlayerEvents.chestOpened(event => {
     potions = addPotionsWithUnlock(player, potions, "apotheosis:flying", floorPerdicate(45))
     if (potions.length > 0) sideItems.push(global.randomPick(potions))
 
+    let conditionalItems = [
+        "minecraft:air"
+    ]
+
+    if (bowPredicate(player)) conditionalItems.push(Item.of("minecraft:arrow", global.randomInt(1, 9)))
+    if (gunPredicate(player)) conditionalItems.push(Item.of(global.randomPick(Ingredient.of("#gunswithoutroses:bullet").itemIds), global.randomInt(1, 9)))
+
+    if (unlockPerdicate("supplementaries:bomb_blue_loot")(player)) {
+        if (unlockPerdicate("supplementaries:bomb_loot")(player)) conditionalItems.push(Item.of("supplementaries:bomb", global.randomInt(1, 9)))
+        conditionalItems.push(Item.of("supplementaries:bomb_blue", global.randomInt(1, 5)))
+    }
+    else if (unlockPerdicate("supplementaries:bomb_loot")(player)) conditionalItems.push(Item.of("supplementaries:bomb", global.randomInt(1, 5)))
+
     if (inventory.countItem(Item.of(MAIN_ITEM_PLACEHOLDER).item) > 0) inventory.setItem(inventory.find(Ingredient.of(MAIN_ITEM_PLACEHOLDER)), global.randomPick(mainItems))
     if (inventory.countItem(Item.of(SIDE_ITEM_PLACEHOLDER).item) > 0) inventory.setItem(inventory.find(Ingredient.of(SIDE_ITEM_PLACEHOLDER)), global.randomPick(sideItems))
+    if (inventory.countItem(Item.of(CONDITIONAL_ITEM_PLACEHOLDER).item) > 0) inventory.setItem(inventory.find(Ingredient.of(CONDITIONAL_ITEM_PLACEHOLDER)), global.randomPick(conditionalItems))
 })
 // /setblock 15 14 17 minecraft:chest{LootTable:"gambleth:loot_chest"}

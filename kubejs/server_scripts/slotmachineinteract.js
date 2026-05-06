@@ -5,12 +5,12 @@ const $ForgeRegistries = Java.loadClass("net.minecraftforge.registries.ForgeRegi
 
 const SLOT_MACHINE_TIME = 60
 const CHIPS_TO_PLAY = {
-    "inventory": 500,
+    "inventory": 50,
     "weapons": 250,
     "armor": 300,
     "potions": 150,
     "loot": 250,
-    "win": 250000
+    "win": 50000
 }
 const OUTCOMES = {
     "weapons": {
@@ -116,7 +116,7 @@ const OUTCOMES = {
 }
 
 const MAX_SLOT_COUNT = 36
-const MIN_SLOT_COUNT = 2
+const MIN_SLOT_COUNT = 5
 
 BlockEvents.rightClicked(event => {
     let { block, level, player, server } = event
@@ -146,7 +146,10 @@ BlockEvents.rightClicked(event => {
 
         switch (type) {
             case "inventory":
-                let currSlotCount = (MIN_SLOT_COUNT + player.getAttribute("tinyinv:slots").baseValue)
+                let attrs = server.persistentData.getCompound("attributes")
+                if (!attrs.contains("tinyinv:slots")) attrs.putInt("tinyinv:slots", player.getAttribute("tinyinv:slots").baseValue)
+                
+                let currSlotCount = (MIN_SLOT_COUNT + attrs.getInt("tinyinv:slots"))
 
                 let increaseSlotCount = rand < (-(1/(MAX_SLOT_COUNT - MIN_SLOT_COUNT)) * currSlotCount + (MAX_SLOT_COUNT/(MAX_SLOT_COUNT - MIN_SLOT_COUNT))) // 1 at 2, 0 at 36, linear
                 let decreaseSlotCount = (!increaseSlotCount) && (rand < ((1/(2*(MAX_SLOT_COUNT - MIN_SLOT_COUNT))) * currSlotCount - (1/(MAX_SLOT_COUNT - MIN_SLOT_COUNT)))) // 0 at 2, 0.5 at 36, linear
@@ -157,7 +160,7 @@ BlockEvents.rightClicked(event => {
                 else break
 
                 successfullAttempt = true
-                player.getAttribute("tinyinv:slots").setBaseValue(newSlotCount - MIN_SLOT_COUNT)
+                attrs.putInt("tinyinv:slots", newSlotCount - MIN_SLOT_COUNT)
 
                 let invToast = new Notification()
                 invToast.itemIcon = Item.of("diamond_pickaxe")

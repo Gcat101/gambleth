@@ -10,7 +10,8 @@ EntityEvents.death("player", event => {
     if (player.tags.contains("skip_death_logic")) return
 
     player.sendData("set_fm_variable", {key: "inRun", value: "false"})
-    Utils.server.runCommandSilent(`clear ${player.name.string}`)
+    player.inventory.dropAll()
+    // Utils.server.runCommandSilent(`clear ${player.name.string}`)
 
     if (global.getSurvivorsOtherThanPlayer(server, player).length) {
         player.health = player.maxHealth

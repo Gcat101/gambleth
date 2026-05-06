@@ -1,9 +1,9 @@
 {
     "name": "Gambleth",
-    "version": "1.0.4-hotfix-2",
+    "version": "1.1",
     "overrides": [
         "config",
-        "defaultconfig",
+        "defaultconfigs",
         "kubejs",
         "easy_npc"
     ]
