@@ -168,7 +168,7 @@ BlockEvents.rightClicked(event => {
                 invToast.backgroundColor = Color.BLACK
                 invToast.borderColor = Color.GRAY
 
-                player.notify(invToast)
+                global.showToastToAll(server, invToast)
                 break
             case "win":
                 if (rand < .5) break
